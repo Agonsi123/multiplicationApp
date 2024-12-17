@@ -12,12 +12,6 @@ let score = JSON.parse(localStorage.getItem("score"));
 if (!score) {
     score = 0;
 }
-//Reset score when page is reloaded
-document.addEventListener("DOMContentLoaded", () => {
-    score = 0;
-    updateLocalStorage();
-    scoreE1.innerText = `score: ${score}`;
-});
 
 scoreE1.innerText = `score: ${score}`;
 
